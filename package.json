@@ -1,0 +1,30 @@
+{
+  "name": "regex.js",
+  "version": "0.0.0",
+  "description": "Collections of the most used regular expressions in JavaScript",
+  "main": "regex.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evandroeisinger/regex.js.git"
+  },
+  "keywords": [
+    "regex",
+    "regular",
+    "expressions",
+    "collection",
+    "library",
+    "helper"
+  ],
+  "author": "Evandro Eisinger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evandroeisinger/regex.js/issues"
+  },
+  "homepage": "https://github.com/evandroeisinger/regex.js#readme",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
