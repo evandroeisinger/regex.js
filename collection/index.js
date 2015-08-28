@@ -1,6 +1,5 @@
 'use strict';
 
 module.exports = {
-  email: ['validate', 'replace', 'search'],
+  email: require('./email'),
 };
-
