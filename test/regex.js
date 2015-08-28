@@ -1,5 +1,7 @@
-var regex = require('../regex')
+'use strict';
 
-// regex.validate.email('evandro@da.com');
+var replaceHelper = require('../regex');
 
-console.log(regex)
+describe('regex', function () {
+  // TODO
+});
