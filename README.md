@@ -15,24 +15,31 @@ var regex = require('regex');
 
 // validating
 
-regex.email.validate('abc@abc.com'); // true
-regex.email.validate('a b c@abc.com'); // false
+regex.email.validate('abc@abc.com');
+// return true
+regex.email.validate('a b c@abc.com');
+// return false
 
 // replacing
 
-regex.email.replace('list: abc@abc.com, def@def.com', '<email>'); // 'list: <email> <email>'
-regex.email.replace('list: no matches'); // 'list: no matches'
+regex.email.replace('list: abc@abc.d, def@def.g', '<email>');
+// return 'list: <email>, <email>'
+regex.email.replace('list: no matches');
+// return 'list: no matches'
 
 // searching
-regex.email.search('list: abc@abc.com, def@def.com', '<email>'); // ['abc@abc.com', 'def@def.com']
-regex.email.search('list: no matches'); // []
+
+regex.email.search('list: abc@abc.d, def@def.g', '<email>');
+// return ['abc@abc.d', 'def@def.g']
+regex.email.search('list: no matches');
+// return []
 
 ```
 
 ### regex methods
-- regex.type.**validate(source)**;
-- regex.type.**replace(source, value)**;
-- regex.type.**search(source)**;
+- regex.name.**validate(source)**;
+- regex.name.**replace(source, value)**;
+- regex.name.**search(source)**;
 
 ### regex list
 - email;
