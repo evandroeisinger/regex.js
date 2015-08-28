@@ -1,36 +1,16 @@
 'use strict';
 
+// imports
 var collection = require('./collection');
+var validateHelper = require('./helpers/validate');
+var replaceHelper = require('./helpers/replace');
+var searchHelper = require('./helpers/search');
 
-function loadCollection () {
-  var types = {
-    format: {},
-    replace: {},
-    validate: {},
-    search: {},
-  };
-
-  for (var regex in collection) {
-    var type = collection[regex];
-
-    if (type.indexOf('format') !== -1) {
-      types.format[regex];
-    };
-
-    if (type.indexOf('replace') !== -1) {
-      types.format[regex];
-    };
-
-    if (type.indexOf('validate') !== -1) {
-      types.format[regex];
-    };
-
-    if (type.indexOf('search') !== -1) {
-      types.format[regex];
-    };
-  }
-
-  return types;
+// apply regular expressions helpers
+for (var name in collection) {
+  collection[name].validate = validateHelper;
+  collection[name].replace = replaceHelper;
+  collection[name].search = searchHelper;
 }
 
-module.exports = loadCollection();
+module.exports = collection;
