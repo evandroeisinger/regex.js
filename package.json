@@ -1,7 +1,7 @@
 {
   "name": "regex.js",
   "version": "0.0.0",
-  "description": "Collections of the most used regular expressions in JavaScript",
+  "description": "Collection of the most used regular expressions in JavaScript",
   "main": "regex.js",
   "scripts": {
     "test": "make test"
