@@ -52,7 +52,6 @@ regex.email.search('list: no matches');
 
 ---
 ### contribute
-Everyone can contribute! Finding bugs, creating issues, improving documentation, improving editor it self or creating components.
-Every contribution will be welcomed! :santa:
+Everyone can contribute! Every contribution will be welcomed!
 
 **Fork it** -> **Branch it** -> **Test it** -> **Push it** -> **Pull Request it**
