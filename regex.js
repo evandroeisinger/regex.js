@@ -2,15 +2,27 @@
 
 // imports
 var collection = require('./collection');
-var validateHelper = require('./helpers/validate');
-var replaceHelper = require('./helpers/replace');
-var searchHelper = require('./helpers/search');
 
-// apply regular expressions helpers
+// methods
+var methods = {
+  validate: {},
+  replace: {},
+  search: {},
+};
+
+// apply methods
 for (var name in collection) {
-  collection[name].validate = validateHelper;
-  collection[name].replace = replaceHelper;
-  collection[name].search = searchHelper;
+  if (collection[name].validate) {
+    methods.validate[name] = collection[name].validate;
+  }
+
+  if (collection[name].replace) {
+    methods.replace[name] = collection[name].replace;
+  }
+
+  if (collection[name].search) {
+    methods.search[name] = collection[name].search;
+  }
 }
 
-module.exports = collection;
+module.exports = methods;
