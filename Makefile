@@ -1,6 +1,10 @@
 MOCHA=node_modules/mocha/bin/mocha
+JSHINT=node_modules/jshint/bin/jshint
 
-.PHONY: test
+.PHONY: test hint
 
-test:
+hint:
+	$(JSHINT) --config .jshint regex.js collection.js helpers/* test/helpers/*
+
+test: hint
 	$(MOCHA) --recursive --reporter spec

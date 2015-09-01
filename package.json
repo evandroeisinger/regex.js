@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/evandroeisinger/regex.js#readme",
   "devDependencies": {
+    "jshint": "^2.8.0",
     "mocha": "^2.2.5"
   }
 }
