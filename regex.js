@@ -15,5 +15,6 @@ module.exports = {
    */
 
   searchIpv4: require('./helpers/searchIpv4'),
+  replaceIpv4: require('./helpers/replaceIpv4'),
   validateIpv4: require('./helpers/validateIpv4'),
 };
