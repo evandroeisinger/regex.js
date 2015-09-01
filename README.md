@@ -10,7 +10,6 @@ npm install regex.js --save
 
 ### basic usage
 ```javascript
-// load regex.js
 var regex = require('regex');
 
 ```
