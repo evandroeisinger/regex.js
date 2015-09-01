@@ -19,26 +19,26 @@ regex.**validateEmail(source)**:
 ```javascript
 regex.validateEmail('abc@abc.com');
 // return true
-regex.email.validate('a b c@abc.com');
+regex.validateEmail('a b c@abc.com');
 // return false
 
 ```
 
-regex.**replaceEmails(source, value)**:
+regex.**replaceEmail(source, value)**:
 ```javascript
-regex.replaceEmails('list: abc@abc.d, def@def.g', '<email>');
+regex.replaceEmail('list: abc@abc.d, def@def.g', '<email>');
 // return 'list: <email>, <email>'
-regex.replaceEmails('list: no matches');
+regex.replaceEmail('list: no matches');
 // return 'list: no matches'
 
 ```
 
-regex.**searchEmails(source)**:
+regex.**searchEmail(source)**:
 
 ```javascript
-regex.searchEmails('list: abc@abc.d, def@def.g', '<email>');
+regex.searchEmail('list: abc@abc.d, def@def.g', '<email>');
 // return ['abc@abc.d', 'def@def.g']
-regex.searchEmails('list: no matches');
+regex.searchEmail('list: no matches');
 // return []
 
 ```
