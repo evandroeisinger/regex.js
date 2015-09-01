@@ -13,42 +13,36 @@ npm install regex.js --save
 // load regex.js
 var regex = require('regex');
 
-// validating
+```
 
-regex.email.validate('abc@abc.com');
+### regex helpers list
+regex.**validateEmail(source)**:
+```javascript
+regex.validateEmail('abc@abc.com');
 // return true
 regex.email.validate('a b c@abc.com');
 // return false
 
-// replacing
+```
 
-regex.email.replace('list: abc@abc.d, def@def.g', '<email>');
+regex.**replaceEmails(source, value)**:
+```javascript
+regex.replaceEmails('list: abc@abc.d, def@def.g', '<email>');
 // return 'list: <email>, <email>'
-regex.email.replace('list: no matches');
+regex.replaceEmails('list: no matches');
 // return 'list: no matches'
-
-// searching
-
-regex.email.search('list: abc@abc.d, def@def.g', '<email>');
-// return ['abc@abc.d', 'def@def.g']
-regex.email.search('list: no matches');
-// return []
 
 ```
 
-### regex methods
-- regex.name.**validate(source)**;
-- regex.name.**replace(source, value)**;
-- regex.name.**search(source)**;
+regex.**searchEmails(source)**:
 
-### regex list
-- email;
+```javascript
+regex.searchEmails('list: abc@abc.d, def@def.g', '<email>');
+// return ['abc@abc.d', 'def@def.g']
+regex.searchEmails('list: no matches');
+// return []
 
-### support
-- chrome: **latest**;
-- firefox: **latest**;
-- safari: **latest**;
-- internet explore: **9+**;
+```
 
 ---
 ### contribute
