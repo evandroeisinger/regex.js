@@ -17,14 +17,20 @@ var regex = require('regex');
 ### regex methods list
 
 Email:
-- [regex.**validateEmail(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/validateEmail.js)
-- [regex.**replaceEmail(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/replaceEmails.js)
-- [regex.**searchEmail(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/searchEmail.js)
+
+[regex.**validateEmail(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/validateEmail.js)
+
+[regex.**replaceEmail(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/replaceEmails.js)
+
+[regex.**searchEmail(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/searchEmail.js)
 
 Ipv4:
-- [regex.**validateIpv4(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/validateIpv4.js)
-- [regex.**replaceIpv4(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/replaceIpv4.js)
-- [regex.**searchIpv4(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/searchIpv4.js)
+
+[regex.**validateIpv4(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/validateIpv4.js)
+
+[regex.**replaceIpv4(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/replaceIpv4.js)
+
+[regex.**searchIpv4(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/searchIpv4.js)
 
 ---
 ### contribute
