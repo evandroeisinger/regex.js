@@ -1,9 +1,9 @@
 'use strict';
 
-var assert = require("assert");
+var assert = require('assert');
 var regex = require('../../regex');
 
-describe('regex/validIpv4', function () {
+describe('methods/validIpv4', function () {
   it('should return true to a valid ipv4', function () {
     assert.equal(regex.validateIpv4('127.0.0.1'), true);
     assert.equal(regex.validateIpv4('127.127.127.127'), true);

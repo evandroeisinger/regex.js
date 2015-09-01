@@ -1,9 +1,9 @@
 'use strict';
 
-var assert = require("assert");
+var assert = require('assert');
 var regex = require('../../regex');
 
-describe('regex/searchEmail', function () {
+describe('methods/searchEmail', function () {
   it('should return all searched emails', function () {
     assert.equal(regex.searchEmail('abc@abc, def@def')[0], 'abc@abc');
     assert.equal(regex.searchEmail('abc@abc, def@def')[1], 'def@def');

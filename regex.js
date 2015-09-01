@@ -7,7 +7,7 @@ var defaultValidate = require('./helpers/validate');
 
 module.exports = {
   /**
-   * email helpers
+   * email methods
    */
 
   searchEmail: defaultSearch('email_gm'),
@@ -15,7 +15,7 @@ module.exports = {
   validateEmail: defaultValidate('email'),
 
   /**
-   * ipv4 helpers
+   * ipv4 methods
    */
 
   searchIpv4: defaultSearch('ipv4_gm'),

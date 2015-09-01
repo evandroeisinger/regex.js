@@ -1,9 +1,9 @@
 'use strict';
 
-var assert = require("assert");
+var assert = require('assert');
 var regex = require('../../regex');
 
-describe('regex/validEmail', function () {
+describe('methods/validEmail', function () {
   it('should return true to a valid email', function () {
     assert.equal(regex.validateEmail('abc@abc'), true);
     assert.equal(regex.validateEmail('abc@abc.com'), true);
