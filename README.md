@@ -16,7 +16,7 @@ var regex = require('regex');
 
 ### regex actions list
 
-Email:
+email:
 
 [regex.**email.validate(source)**](https://github.com/evandroeisinger/regex.js/tree/master/test/actions/email.validate.js)
 
@@ -24,7 +24,7 @@ Email:
 
 [regex.**email.search(source)**](https://github.com/evandroeisinger/regex.js/tree/master/test/actions/email.search.js)
 
-Ipv4:
+ipv4:
 
 [regex.**ipv4.validate(source)**](https://github.com/evandroeisinger/regex.js/tree/master/test/actions/ipv4.validate.js)
 
