@@ -14,23 +14,23 @@ var regex = require('regex');
 
 ```
 
-### regex methods list
+### regex actions list
 
 Email:
 
-[regex.**email.validate(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/validateEmail.js)
+[regex.**email.validate(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/actions/email.validate.js)
 
-[regex.**email.replace(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/replaceEmails.js)
+[regex.**email.replace(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/actions/email.replace.js)
 
-[regex.**email.search(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/searchEmail.js)
+[regex.**email.search(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/actions/email.search.js)
 
 Ipv4:
 
-[regex.**ipv4.validate(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/validateIpv4.js)
+[regex.**ipv4.validate(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/actions/ipv4.validate.js)
 
-[regex.**ipv4.replace(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/replaceIpv4.js)
+[regex.**ipv4.replace(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/actions/ipv4.replace.js)
 
-[regex.**ipv4.search(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/searchIpv4.js)
+[regex.**ipv4.search(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/actions/ipv4.search.js)
 
 ---
 ### contribute
