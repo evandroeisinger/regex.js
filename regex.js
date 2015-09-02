@@ -1,19 +1,19 @@
 'use strict';
 
-var action = require('./src/action');
+var helpers = require('./src/helpers');
 
 module.exports = {
-  /** email actions */
+  /** email helpers */
   email : {
-    search: action.create('search', 'email_gm'),
-    replace: action.create('replace', 'email_gm'),
-    validate: action.create('validate', 'email'),
+    search: helpers.register('search', 'email_gm'),
+    replace: helpers.register('replace', 'email_gm'),
+    validate: helpers.register('validate', 'email'),
   },
 
-  /** ipv4 actions */
+  /** ipv4 helpers */
   ipv4: {
-    search: action.create('search', 'ipv4_gm'),
-    replace: action.create('replace', 'ipv4_gm'),
-    validate: action.create('validate', 'ipv4'),
+    search: helpers.register('search', 'ipv4_gm'),
+    replace: helpers.register('replace', 'ipv4_gm'),
+    validate: helpers.register('validate', 'ipv4'),
   },
 };
