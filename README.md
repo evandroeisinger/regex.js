@@ -18,19 +18,19 @@ var regex = require('regex');
 
 Email:
 
-[regex.**validateEmail(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/validateEmail.js)
+[regex.**email.validate(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/validateEmail.js)
 
-[regex.**replaceEmail(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/replaceEmails.js)
+[regex.**email.replace(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/replaceEmails.js)
 
-[regex.**searchEmail(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/searchEmail.js)
+[regex.**email.search(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/searchEmail.js)
 
 Ipv4:
 
-[regex.**validateIpv4(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/validateIpv4.js)
+[regex.**ipv4.validate(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/validateIpv4.js)
 
-[regex.**replaceIpv4(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/replaceIpv4.js)
+[regex.**ipv4.replace(source, value)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/replaceIpv4.js)
 
-[regex.**searchIpv4(source)**](https://github.com/evandroeisinger/regex.js/blob/master/test/methods/searchIpv4.js)
+[regex.**ipv4.search(source)**](https://github.com/evandroeisinger/regex.js/blob/master/src/test/methods/searchIpv4.js)
 
 ---
 ### contribute

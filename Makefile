@@ -4,7 +4,7 @@ JSHINT=node_modules/jshint/bin/jshint
 .PHONY: test hint
 
 hint:
-	$(JSHINT) --config .jshint regex.js collection.js helpers/* test/helpers/*
+	$(JSHINT) --config .jshint regex.js src/* test/helpers/*
 
 test: hint
 	$(MOCHA) --recursive --reporter spec

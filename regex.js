@@ -1,24 +1,19 @@
 'use strict';
 
-// default helpers
-var defaultReplace = require('./helpers/replace');
-var defaultSearch = require('./helpers/search');
-var defaultValidate = require('./helpers/validate');
+var action = require('./src/action');
 
 module.exports = {
-  /**
-   * email methods
-   */
+  /** email actions */
+  email : {
+    search: action.create('search', 'email_gm'),
+    replace: action.create('replace', 'email_gm'),
+    validate: action.create('validate', 'email'),
+  },
 
-  searchEmail: defaultSearch('email_gm'),
-  replaceEmail: defaultReplace('email_gm'),
-  validateEmail: defaultValidate('email'),
-
-  /**
-   * ipv4 methods
-   */
-
-  searchIpv4: defaultSearch('ipv4_gm'),
-  replaceIpv4: defaultReplace('ipv4_gm'),
-  validateIpv4: defaultValidate('ipv4'),
+  /** ipv4 actions */
+  ipv4: {
+    search: action.create('search', 'ipv4_gm'),
+    replace: action.create('replace', 'ipv4_gm'),
+    validate: action.create('validate', 'ipv4'),
+  },
 };

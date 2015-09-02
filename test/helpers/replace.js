@@ -1,12 +1,11 @@
 'use strict';
 
 var assert = require('assert');
-var defaultReplace = require('../../helpers/replace');
+var replace = require('../../src/helpers/replace');
 
 describe('helpers/replace', function () {
   it('should create a replace helper method', function () {
-    var replaceEmail = defaultReplace('email_gm');
-
-    assert.equal(replaceEmail('replace@replace', '<replace>'), '<replace>');
+    assert.equal(replace(/r/gm, 'r,r', '<r>'), '<r>,<r>');
+    assert.equal(replace(/\d/gm, '', '<r>'), '');
   });
 });
