@@ -16,4 +16,11 @@ module.exports = {
     replace: helpers.register('replace', 'ipv4_gm'),
     validate: helpers.register('validate', 'ipv4'),
   },
+
+  /** time helpers */
+  time: {
+    search: helpers.register('search', 'time_gmi'),
+    replace: helpers.register('replace', 'time_gmi'),
+    validate: helpers.register('validate', 'time_i'),
+  },
 };
